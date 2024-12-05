@@ -70,6 +70,7 @@ def replicate(dna, pct):
     if r.random() <= pct: # Only mutate (pct)% of the time
         mutate(rna)
     print('Generation ' + str(n_generations) + ': ' + str(rna))
+    n_generations += 1
 
     return dna_from_rna(rna)
 
